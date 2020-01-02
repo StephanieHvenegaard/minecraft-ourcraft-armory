@@ -1,7 +1,7 @@
 {
-    "parent": "ourcraft-core:item/flintlock_musket",
+    "parent": "ourcraft-armory:item/flintlock_musket",
     "textures": {
-        "layer0": "ourcraft-core:item/flintlock_musket_loaded"
+        "layer0": "ourcraft-armory:item/flintlock_musket_loaded"
     }
 }
 

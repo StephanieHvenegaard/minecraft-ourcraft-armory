@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0" : "ourcraft-core:item/kelp_boots"
+        "layer0" : "ourcraft-armory:item/kelp_boots"
     }
 }
 

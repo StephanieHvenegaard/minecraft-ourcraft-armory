@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0" : "ourcraft-core:item/obsidian_axe"
+        "layer0" : "ourcraft-armory:item/obsidian_axe"
     }
 }
 
