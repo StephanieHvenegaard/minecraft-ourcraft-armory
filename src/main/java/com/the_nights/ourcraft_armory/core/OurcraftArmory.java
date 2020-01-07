@@ -10,10 +10,10 @@ import com.the_nights.ourcraft_armory.item.material.ArmoryToolMaterial;
 import com.the_nights.ourcraft_armory.item.tool.ItemHoe;
 import com.the_nights.ourcraft_armory.item.tool.ItemPickAxe;
 import com.the_nights.ourcraft_armory.item.tool.ItemShovel;
-import com.the_nights.ourcraft_armory.item.weapon.ItemFireArm;
-import com.the_nights.ourcraft_armory.item.weapon.ItemKatana;
-import com.the_nights.ourcraft_armory.item.weapon.ItemScythe;
-import com.the_nights.ourcraft_armory.item.weapon.ItemSword;
+import com.the_nights.ourcraft_armory.item.weapon.ItemBaseFireArm;
+import com.the_nights.ourcraft_armory.item.weapon.melee.ItemKatana;
+import com.the_nights.ourcraft_armory.item.weapon.melee.ItemBaseScythe;
+import com.the_nights.ourcraft_armory.item.weapon.melee.ItemSword;
 import com.the_nights.ourcraft_armory.proxy.ArmoryClientProxy;
 import com.the_nights.ourcraft_armory.proxy.ArmoryCommonProxy;
 import net.minecraft.block.Block;
@@ -152,7 +152,7 @@ public class OurcraftArmory
                     ObsidianItems.axe = new ItemAxe(ArmoryToolMaterial.Obsidian, new Item.Properties().group(ArmoryGroup.TOOLS)).setRegistryName(getLocation("obsidian_axe")),
                     // Hoe
                     EmaraldItems.hoe = new ItemHoe(ArmoryToolMaterial.Emarald, new Item.Properties().group(ArmoryGroup.TOOLS)).setRegistryName(getLocation("emarald_hoe")),
-                    ObsidianItems.hoe = new ItemScythe(ArmoryToolMaterial.Obsidian, new Item.Properties().group(ArmoryGroup.TOOLS)).setRegistryName(getLocation("obsidian_hoe")),
+                    ObsidianItems.hoe = new ItemBaseScythe(ArmoryToolMaterial.Obsidian, new Item.Properties().group(ArmoryGroup.TOOLS)).setRegistryName(getLocation("obsidian_hoe")),
                     // spade
                     EmaraldItems.spade = new ItemShovel(ArmoryToolMaterial.Emarald, new Item.Properties().group(ArmoryGroup.TOOLS)).setRegistryName(getLocation("emarald_spade")),
                     ObsidianItems.spade = new ItemShovel(ArmoryToolMaterial.Obsidian, new Item.Properties().group(ArmoryGroup.TOOLS)).setRegistryName(getLocation("obsidian_spade")),
@@ -171,9 +171,9 @@ public class OurcraftArmory
 
 
                     // Firearms
-                    IronItems.musket = new ItemFireArm(ArmoryRangedMaterial.FLINTLOCK_MUSKET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_musket")),
-                    IronItems.blunderbuss = new ItemFireArm(ArmoryRangedMaterial.FLINTLOCK_BLUNDERBUSS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_blunderbuss")),
-                    IronItems.pistol = new ItemFireArm(ArmoryRangedMaterial.FLINTLOCK_PISTOL, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_pistol")),
+                    IronItems.musket = new ItemBaseFireArm(ArmoryRangedMaterial.FLINTLOCK_MUSKET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_musket")),
+                    IronItems.blunderbuss = new ItemBaseFireArm(ArmoryRangedMaterial.FLINTLOCK_BLUNDERBUSS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_blunderbuss")),
+                    IronItems.pistol = new ItemBaseFireArm(ArmoryRangedMaterial.FLINTLOCK_PISTOL, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_pistol")),
 
                     MiscItems.blunderAmmo = new Item(new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("blunderbuss_ammo")),
                     MiscItems.flintlockAmmo = new Item(new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_ammo")),

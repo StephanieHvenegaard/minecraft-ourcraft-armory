@@ -1,4 +1,4 @@
-package com.the_nights.ourcraft_armory.item.weapon;
+package com.the_nights.ourcraft_armory.item.weapon.melee;
 
 import net.minecraft.item.TridentItem;
 import net.minecraft.util.ResourceLocation;

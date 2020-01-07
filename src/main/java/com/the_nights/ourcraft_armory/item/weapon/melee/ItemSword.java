@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
  */
-package com.the_nights.ourcraft_armory.item.weapon;
+package com.the_nights.ourcraft_armory.item.weapon.melee;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
