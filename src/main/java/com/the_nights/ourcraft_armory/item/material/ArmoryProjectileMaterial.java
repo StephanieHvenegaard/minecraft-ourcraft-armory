@@ -5,7 +5,7 @@
  */
 package com.the_nights.ourcraft_armory.item.material;
 
-import com.the_nights.ourcraft_armory.item.MiscItems;
+import com.the_nights.ourcraft_armory.item.setlists.armor.MiscItems;
 import net.minecraft.item.Item;
 
 /**

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.the_nights.ourcraft_armory.item.armor;
+package com.the_nights.ourcraft_armory.item.setlists.armor;
 
 import net.minecraft.item.Item;
 
@@ -11,10 +11,20 @@ import net.minecraft.item.Item;
  *
  * @author emili
  */
-public class BlueGlassArmor {
+public class BlueGlassItems {
+    
+    public static Item pickaxe;
+    public static Item axe;
+    public static Item spade;
+    public static Item hoe;
+    public static Item sword;
+    public static Item katana;
+    public static Item ingot;
+    public static Item dust;
+    // Armor
     public static Item helmet;
     public static Item chestplate;
     public static Item leggings;
     public static Item boots;
-
+    
 }

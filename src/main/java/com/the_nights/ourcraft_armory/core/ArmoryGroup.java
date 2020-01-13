@@ -1,7 +1,6 @@
 package com.the_nights.ourcraft_armory.core;
 
-import com.the_nights.ourcraft_armory.item.ObsidianItems;
-import com.the_nights.ourcraft_core.tap.OurcraftCoreTap;
+import com.the_nights.ourcraft_armory.item.setlists.armor.ObsidianItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 

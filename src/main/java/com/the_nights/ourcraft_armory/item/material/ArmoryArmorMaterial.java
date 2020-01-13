@@ -6,9 +6,9 @@
 package com.the_nights.ourcraft_armory.item.material;
 
 import com.the_nights.ourcraft_armory.core.OurcraftArmory;
-import com.the_nights.ourcraft_armory.item.BlueGlassItems;
-import com.the_nights.ourcraft_armory.item.ObsidianItems;
-import com.the_nights.ourcraft_armory.item.PinkSapphireItems;
+import com.the_nights.ourcraft_armory.item.setlists.armor.BlueGlassItems;
+import com.the_nights.ourcraft_armory.item.setlists.armor.ObsidianItems;
+import com.the_nights.ourcraft_armory.item.setlists.armor.PinkSapphireItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
