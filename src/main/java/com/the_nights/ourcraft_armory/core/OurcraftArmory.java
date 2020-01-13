@@ -163,12 +163,6 @@ public class OurcraftArmory
                     BlueGlassItems.ingot = new Item(new Item.Properties().group(OurcraftCore.OURCRAFT_GROUP)).setRegistryName(getLocation("blue_glass_ingot")),
                     BlueGlassItems.dust = new Item(new Item.Properties().group(OurcraftCore.OURCRAFT_GROUP)).setRegistryName(getLocation("blue_glass_dust")),
 
-
-
-
-
-
-
                     // Firearms
                     IronItems.musket = new ItemBaseFireArm(ArmoryRangedMaterial.FLINTLOCK_MUSKET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_musket")),
                     IronItems.blunderbuss = new ItemBaseFireArm(ArmoryRangedMaterial.FLINTLOCK_BLUNDERBUSS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("flintlock_blunderbuss")),
