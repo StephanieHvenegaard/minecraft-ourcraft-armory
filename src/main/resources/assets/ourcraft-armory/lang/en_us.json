@@ -1,0 +1,59 @@
+{
+    "itemGroup.ourcraft_armory_tools": "Ourcraft Tools",
+    "itemGroup.ourcraft_armory_weapons": "Ourcraft weapons",
+
+    "item.ourcraft-armory.obsidian_sword": "Obsidian Sword",
+    "item.ourcraft-armory.obsidian_katana": "Obsidian Katana",
+    "item.ourcraft-armory.obsidian_axe": "Obsidian Axe",
+    "item.ourcraft-armory.obsidian_hoe": "Obsidian Scythe",
+    "item.ourcraft-armory.obsidian_pickaxe": "Obsidian Pickaxe",
+    "item.ourcraft-armory.obsidian_spade": "Obsidian Spade",
+    "item.ourcraft-armory.obsidian_helmet": "Obsidian helmet",
+    "item.ourcraft-armory.obsidian_chest": "Obsidian Chestplate",
+    "item.ourcraft-armory.obsidian_leggings": "Obsidian Leggins",
+    "item.ourcraft-armory.obsidian_boots": "Obsidian Boots",
+
+    "item.ourcraft-armory.kelp_helmet": "Kelp helmet",
+    "item.ourcraft-armory.kelp_chest": "Kelp Chestplate",
+    "item.ourcraft-armory.kelp_leggings": "Kelp Leggins",
+    "item.ourcraft-armory.kelp_boots": "Kelp Boots",
+
+    "item.ourcraft-armory.wood_helmet": "Wooden helmet",
+    "item.ourcraft-armory.wood_chest": "Wooden Chestplate",
+    "item.ourcraft-armory.wood_leggings": "Wooden Leggins",
+    "item.ourcraft-armory.wood_boots": "Wooden Boots",
+
+    "item.ourcraft-armory.emarald_katana": "Emarald Katana",
+    "item.ourcraft-armory.emarald_sword": "Emarald Sword",
+    "item.ourcraft-armory.emarald_axe": "Emarald Axe",
+    "item.ourcraft-armory.emarald_hoe": "Emarald Hoe",
+    "item.ourcraft-armory.emarald_pickaxe": "Emarald Pickaxe",
+    "item.ourcraft-armory.emarald_spade": "Emarald Spade",
+
+    "item.ourcraft-armory.sapphire_katana": "Pink Sapphire Katana",
+    "item.ourcraft-armory.sapphire_sword": "Pink Sapphire Sword",
+    "item.ourcraft-armory.sapphire_axe": "Pink Sapphire Axe",
+    "item.ourcraft-armory.sapphire_hoe": "Pink Sapphire Hoe",
+    "item.ourcraft-armory.sapphire_pickaxe": "Pink Sapphire Pickaxe",
+    "item.ourcraft-armory.sapphire_spade": "Pink Sapphire Spade",
+    "item.ourcraft-armory.sapphire_helmet": "Pink Sapphire helmet",
+    "item.ourcraft-armory.sapphire_chest": "Pink Sapphire Chestplate",
+    "item.ourcraft-armory.sapphire_leggings": "Pink Sapphire Leggins",
+    "item.ourcraft-armory.sapphire_boots": "Pink Sapphire Boots",
+
+
+    "item.ourcraft-armory.diamond_katana": "Diamond Katana",
+    "item.ourcraft-armory.gold_katana": "Gold Katana",    
+    "item.ourcraft-armory.iron_katana": "Iron Katana",
+    "item.ourcraft-armory.stone_katana": "Stone Katana",
+    "item.ourcraft-armory.wood_katana": "Wooden Katana",
+
+    "item.ourcraft-armory.flintlock_musket": "Flintlock Musket",
+    "item.ourcraft-armory.flintlock_pistol": "Flintlock Pistol",
+    "item.ourcraft-armory.flintlock_blunderbuss": "Flintlock Blunderbuss",
+    "item.ourcraft-armory.flintlock_ammo": "Flintlock Ammunition",
+    "item.ourcraft-armory.blunderbuss_ammo": "Blunderbuss Ammunition",
+    "item.ourcraft-armory.flintlock_blunderbuss_barrelassembly": "Flintlock blunderbuss Barrel",
+    "item.ourcraft-armory.flintlock_musket_barrelassembly": "Flintlock Musket Barrel",
+    "item.ourcraft-armory.gunstock": "Gunstock"
+}

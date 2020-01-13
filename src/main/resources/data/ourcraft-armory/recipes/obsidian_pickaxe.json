@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+            [
+                "III",
+                " S ",
+                " S "
+            ],
+    "key": 
+            {
+                "I": {
+                    "item": "ourcraft-armory:obsidian_ingot"
+                },
+                "S": {
+                    "item": "minecraft:stick"
+                }
+            },
+    "result": {
+        "item": "ourcraft-armory:obsidian_pickaxe"
+    }
+}
+

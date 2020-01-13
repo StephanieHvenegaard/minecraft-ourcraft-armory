@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+            [
+                "XXX",
+                "X X",
+                "X X"
+            ],
+    "key": 
+            {
+                "X": {
+                    "item": "ourcraft-armory:obsidian_ingot"
+                }
+            },
+    "result": {
+        "item": "ourcraft-armory:obsidian_leggings"
+    }
+}
