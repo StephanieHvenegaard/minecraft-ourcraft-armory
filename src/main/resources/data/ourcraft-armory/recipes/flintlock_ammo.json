@@ -10,7 +10,7 @@
             {
                 
                 "B": {
-                    "item": "ourcraft-core:lead_ingot"
+                    "item": "ourcraft-armory:lead_ingot"
                 },
                 "P": {
                     "item": "minecraft:gunpowder"
@@ -20,7 +20,7 @@
                 }
             },
     "result": {
-        "item": "ourcraft-core:flintlock_ammo",
+        "item": "ourcraft-armory:flintlock_ammo",
         "count" : 9
     }
 }

@@ -46,7 +46,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  *
  * @author Stephanie
  */
-public class ItemFireArm extends ShootableItem {
+public class ItemBaseFireArm extends ShootableItem {
 
     public static final Predicate<ItemStack> AMMUNITION_MUSKET = (stack) -> {
         return stack.getItem().isIn(ItemTagsArmory.FLINTLOCK_AMMO);
@@ -58,10 +58,32 @@ public class ItemFireArm extends ShootableItem {
     private ArmoryRangedMaterial specs;
     private static String isLoadedTag = "charged";
 
-    public ItemFireArm(ArmoryRangedMaterial rangedspecs, Properties props) {
+    public ItemBaseFireArm(ArmoryRangedMaterial rangedspecs, Properties props) {
         super(props.maxStackSize(1));
         //firearmPart = new FirearmPart(rangedspecs);
         this.specs = rangedspecs;
+
+//        this.addPropertyOverride(new ResourceLocation("pull"), (itemStack, world, livingEntity) -> {
+//            if (livingEntity != null && itemStack.getItem() == this) {
+//                return isCharged(itemStack) ? 0.0F : (float)(itemStack.getUseDuration() - livingEntity.getItemInUseCount()) / (float)getChargeTime(itemStack);
+//            } else {
+//                return 0.0F;
+//            }
+//        });
+//        this.addPropertyOverride(new ResourceLocation("pulling"), (itemStack, world, livingEntity) -> {
+//            return livingEntity != null && livingEntity.isHandActive() && livingEntity.getActiveItemStack() == itemStack && !isCharged(itemStack) ? 1.0F : 0.0F;
+//        });
+//        this.addPropertyOverride(new ResourceLocation("charged"), (itemStack, world, livingEntity) -> {
+//            return livingEntity != null && isCharged(itemStack) ? 1.0F : 0.0F;
+//        });
+//        this.addPropertyOverride(new ResourceLocation("firework"), (itemStack, world, livingEntity) -> {
+//            return livingEntity != null && isCharged(itemStack) && hasChargedProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
+//        });
+
+
+//  ----------------
+//  Old implimentation.
+
         this.addPropertyOverride(new ResourceLocation("pull"), (item, world, livingEntity) -> {
             if (livingEntity != null && item.getItem() == this) {
                 return isLoaded(item) ? 0.0F
@@ -86,11 +108,6 @@ public class ItemFireArm extends ShootableItem {
         List<ITextComponent> list1 = Lists.newArrayList();
         list1.add(new StringTextComponent(""));
         list1.add(new StringTextComponent("When in hands:").applyTextStyle(TextFormatting.GRAY));
-        // if (isLoaded(stack)) {
-        //    list1.add(new StringTextComponent(" Loaded state : Loaded").applyTextStyle(TextFormatting.DARK_GREEN));
-        // } else {
-        //    list1.add(new StringTextComponent(" Loaded state : Unloaded").applyTextStyle(TextFormatting.DARK_GREEN));
-        // }
         list1.add(new StringTextComponent(" " + specs.spread + "  Spread.").applyTextStyle(TextFormatting.DARK_GREEN));
         list1.add(new StringTextComponent(" " + specs.magazinCapasity + "  Magazin Capasity").applyTextStyle(TextFormatting.DARK_GREEN));
         list1.add(new StringTextComponent(" " + this.getChargeTime(stack) + "  ReloadSpeed").applyTextStyle(TextFormatting.DARK_GREEN));
@@ -126,6 +143,7 @@ public class ItemFireArm extends ShootableItem {
             // OurcraftArmory.LOGGER.info("for weapon. " + itemstack);
             if (!ammo.isEmpty()) {
                 if (!isLoaded(itemstack)) {
+                    OurcraftArmory.LOGGER.info("setting active hand.");
                     playerIn.setActiveHand(handIn);
                 }
                 return new ActionResult<>(ActionResultType.SUCCESS, itemstack);
@@ -180,6 +198,7 @@ public class ItemFireArm extends ShootableItem {
                 worldIn.playSound((PlayerEntity) null, entityLiving.posX, entityLiving.posY, entityLiving.posZ,
                         SoundEvents.ITEM_CROSSBOW_LOADING_END, soundcategory, 1.0F,
                         1.0F / (random.nextFloat() * 0.5F + 1.0F) + 0.2F);
+
             }
         }
     }
@@ -241,8 +260,8 @@ public class ItemFireArm extends ShootableItem {
      */
     public static int getChargeTime(ItemStack stack) {
         int reloadtime = 25;
-        if (stack.getItem() instanceof ItemFireArm) {
-            ItemFireArm firearm = (ItemFireArm) stack.getItem();
+        if (stack.getItem() instanceof ItemBaseFireArm) {
+            ItemBaseFireArm firearm = (ItemBaseFireArm) stack.getItem();
             reloadtime = firearm.specs.reloadTime;
         }
         int i = EnchantmentHelper.getEnchantmentLevel(Enchantments.QUICK_CHARGE, stack);
@@ -317,8 +336,8 @@ public class ItemFireArm extends ShootableItem {
             float p_220014_4_, float p_220014_5_) {
         int projectiles = 1;
         float spread = 0.0f;
-        if (weapon.getItem() instanceof ItemFireArm) {
-            ItemFireArm firearm = (ItemFireArm) weapon.getItem();
+        if (weapon.getItem() instanceof ItemBaseFireArm) {
+            ItemBaseFireArm firearm = (ItemBaseFireArm) weapon.getItem();
             projectiles = firearm.specs.ammoType.projectilesPerBullet;
             spread = firearm.specs.spread;
         }
@@ -372,13 +391,13 @@ public class ItemFireArm extends ShootableItem {
             ((AbstractArrowEntity) iprojectile).pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 
             float velocityMod = 1.0f;
-            if (p_220016_3_.getItem() instanceof ItemFireArm) {
-                ItemFireArm firearm = (ItemFireArm) p_220016_3_.getItem();
+            if (p_220016_3_.getItem() instanceof ItemBaseFireArm) {
+                ItemBaseFireArm firearm = (ItemBaseFireArm) p_220016_3_.getItem();
                 velocityMod = firearm.specs.projectileVelocity;
                 ((AbstractArrowEntity) iprojectile).setDamage(firearm.specs.ammoType.dmg);
             }
 
-            Vec3d vec3d1 = p_220016_1_.func_213286_i(1.0F);
+            Vec3d vec3d1 = p_220016_1_.getUpVector(1.0F);
             Quaternion quaternion = new Quaternion(new Vector3f(vec3d1), p_220016_9_, true);
             Vec3d vec3d = p_220016_1_.getLook(1.0F);
             Vector3f vector3f = new Vector3f(vec3d);
@@ -403,7 +422,7 @@ public class ItemFireArm extends ShootableItem {
         }
 
         abstractarrowentity.setHitSound(SoundEvents.ITEM_CROSSBOW_HIT);
-        abstractarrowentity.func_213865_o(true);
+        abstractarrowentity.setShotFromCrossbow(true);
 
         // int i = EnchantmentHelper.getEnchantmentLevel(Enchantments.PIERCING,
         // p_220024_2_);

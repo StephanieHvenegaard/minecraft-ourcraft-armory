@@ -25,7 +25,7 @@ SOFTWARE.
  */
 package com.the_nights.ourcraft_armory.item.material;
 
-import com.the_nights.ourcraft_armory.item.ObsidianItems;
+import com.the_nights.ourcraft_armory.item.list.ObsidianItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
