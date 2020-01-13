@@ -1,9 +1,9 @@
-package com.the_nights.ourcraft_armory.item.setlists.armor;
+package com.the_nights.ourcraft_armory.item.list;
 
 import net.minecraft.item.Item;
 
 public class BoneItems {
-    
+
     // Tools
     public static Item pickaxe;
     public static Item axe;

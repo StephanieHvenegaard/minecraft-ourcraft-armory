@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-package com.the_nights.ourcraft_armory.item.setlists.armor;
+package com.the_nights.ourcraft_armory.item.list;
 
 import net.minecraft.item.Item;
 
@@ -31,7 +31,7 @@ import net.minecraft.item.Item;
  *
  * @author Stephanie
  */
-public class ObsidianItems {
+public class PinkSapphireItems {
     public static Item pickaxe;
     public static Item axe;
     public static Item spade;
@@ -39,10 +39,9 @@ public class ObsidianItems {
     public static Item sword;
     public static Item katana;
     public static Item ingot;
-    // Armor
+// armor
     public static Item helmet;
     public static Item chestplate;
     public static Item leggings;
     public static Item boots;
 }
-

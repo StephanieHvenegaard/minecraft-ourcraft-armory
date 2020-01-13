@@ -198,7 +198,7 @@ public class ItemBaseFireArm extends ShootableItem {
                 worldIn.playSound((PlayerEntity) null, entityLiving.posX, entityLiving.posY, entityLiving.posZ,
                         SoundEvents.ITEM_CROSSBOW_LOADING_END, soundcategory, 1.0F,
                         1.0F / (random.nextFloat() * 0.5F + 1.0F) + 0.2F);
-                entityLiving
+
             }
         }
     }
