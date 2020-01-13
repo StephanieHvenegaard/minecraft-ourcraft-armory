@@ -2,11 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients":
             [             
-               {"item": "ourcraft-core:flintlock_blunderbuss_barrelassembly"},
-               {"item": "ourcraft-core:gunstock"}
+               {"item": "ourcraft-armory:flintlock_blunderbuss_barrelassembly"},
+               {"item": "ourcraft-armory:gunstock"}
             ],    
     "result": {
-        "item": "ourcraft-core:flintlock_blunderbuss"
+        "item": "ourcraft-armory:flintlock_blunderbuss"
     }
 }
 
