@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-package com.the_nights.ourcraft_armory.item;
+package com.the_nights.ourcraft_armory.item.list;
 
 import net.minecraft.item.Item;
 
@@ -38,5 +38,10 @@ public class PinkSapphireItems {
     public static Item hoe;
     public static Item sword;
     public static Item katana;
-    public static Item ingot;    
+    public static Item ingot;
+// armor
+    public static Item helmet;
+    public static Item chestplate;
+    public static Item leggings;
+    public static Item boots;
 }

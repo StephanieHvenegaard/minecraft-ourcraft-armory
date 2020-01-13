@@ -22,22 +22,27 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
- */
-package com.the_nights.ourcraft_armory.item.weapon;
+*/
+package com.the_nights.ourcraft_armory.item.list;
 
-import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
 
 /**
  *
  * @author Stephanie
  */
-public class ItemSword extends SwordItem{
-
-    public ItemSword(IItemTier itemTier, Item.Properties props) {
-        super(itemTier, 0, -2.6f, props);
-    }
-
-    
+public class ObsidianItems {
+    public static Item pickaxe;
+    public static Item axe;
+    public static Item spade;
+    public static Item hoe;
+    public static Item sword;
+    public static Item katana;
+    public static Item ingot;
+    // Armor
+    public static Item helmet;
+    public static Item chestplate;
+    public static Item leggings;
+    public static Item boots;
 }
+
