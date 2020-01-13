@@ -25,7 +25,9 @@ public enum ArmoryArmorMaterial implements IArmorMaterial {
     obsidian("obsidian",  200, 10, 10, 12, 9, 7, 3.0f, ObsidianItems.ingot),
     Sapphire("sapphire",  200, 25, 10, 12, 9, 7, 3.0f, PinkSapphireItems.ingot),
     blue_glass("blue_glass",  200, 25, 3, 7, 5, 3, 1.0f, BlueGlassItems.ingot),
+    bone("bone",  2, 18, 3, 3,3, 3, 2.0f, Items.BONE),
     wood("wooden",  2, 2, 1, 1,1, 1, 1.0f, null),
+    bamboo("bamboo", 2,3,2,2,2,2,1.0f, Items.BAMBOO),
     kelp("kelp", 1, 25,1, 1, 1, 1, 0.0f, Items.DRIED_KELP);
 
     private static final int[] MAX_DAMAGE = new int[]{13, 15, 16, 11};

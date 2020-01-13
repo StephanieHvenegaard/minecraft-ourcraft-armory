@@ -55,7 +55,9 @@ public enum ArmoryToolMaterial implements IItemTier {
     Diamond(5.0f, 1.0f, 1.0f, 1562, 3, 10, Items.DIAMOND),
     Iron(4.0f, 1.0f, 1.0f, 251, 2, 9, Items.IRON_INGOT),
     Golden(2.0f, 1.0f, 1.0f, 33, 1, 25, Items.GOLD_INGOT),
+    Bone(2.5f,1.0f,1.0f, 198, 1,18,Items.BONE ),
     Stone(3.0f, 1.0f, 1.0f, 132, 1, 9, Items.COBBLESTONE),
+    Bamboo(2.2f,1.0f,1.0f,120,1,15,Items.BAMBOO),
     Wood(2.0f, 1.0f, 1.0f, 60, 1, 15, null),;
 
     private final float dmg;
