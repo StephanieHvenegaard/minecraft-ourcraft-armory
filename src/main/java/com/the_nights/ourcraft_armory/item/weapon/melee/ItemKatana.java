@@ -25,5 +25,6 @@ public class ItemKatana extends SwordItem {
         super(itemTier, 1, -1.6f, props);
         this.attackReach =-2;
         this.attackKnockBack =-2;
+
     }
 }
