@@ -6,8 +6,8 @@ import net.minecraft.item.ItemStack;
 
 public class ArmoryGroup
 {
-    public static final ItemGroup COMBAT = new ArmoryTools();               // creative tap
-    public static final ItemGroup TOOLS = new AmoryWeapons();               // creative tap
+    public static final ItemGroup COMBAT = new ArmoryWeapons();               // creative tap
+    public static final ItemGroup TOOLS = new ArmoryTools();               // creative tap
 }
 class ArmoryTools extends ItemGroup {
 
@@ -21,9 +21,9 @@ class ArmoryTools extends ItemGroup {
     }
 }
 
-class AmoryWeapons extends ItemGroup {
+class ArmoryWeapons extends ItemGroup {
 
-    public AmoryWeapons() {
+    public ArmoryWeapons() {
         super("ourcraft_armory_weapons");
     }
 

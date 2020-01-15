@@ -22,8 +22,9 @@ public class ItemKatana extends SwordItem {
     private final float attackReach;
     private final float attackKnockBack;
     public ItemKatana(IItemTier itemTier, Item.Properties props) {
-        super(itemTier, 1, -1.6f, props);
+        super(itemTier, 1, -1.4f, props);
         this.attackReach =-2;
         this.attackKnockBack =-2;
+
     }
 }
