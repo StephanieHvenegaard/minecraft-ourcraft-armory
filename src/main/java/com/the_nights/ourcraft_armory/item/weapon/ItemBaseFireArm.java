@@ -59,9 +59,10 @@ public class ItemBaseFireArm extends ShootableItem {
     private static String isLoadedTag = "charged";
 
     public ItemBaseFireArm(ArmoryRangedMaterial rangedspecs, Properties props) {
-        super(props.maxStackSize(1));
+        super(props.maxStackSize(1).maxDamage(rangedspecs.durability));
         //firearmPart = new FirearmPart(rangedspecs);
         this.specs = rangedspecs;
+
 
 //        this.addPropertyOverride(new ResourceLocation("pull"), (itemStack, world, livingEntity) -> {
 //            if (livingEntity != null && itemStack.getItem() == this) {
