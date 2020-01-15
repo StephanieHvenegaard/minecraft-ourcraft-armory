@@ -119,27 +119,32 @@ public class OurcraftArmory
                     ObsidianItems.katana = new ItemKatana(ArmoryToolMaterial.Obsidian, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("obsidian_katana")),
                     // -----------------------------
                     // ARMOR
-                    // helmet
-                    // new ArmorItem(ArmoryArmorMaterial.TURTLE, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("obsidian_helmet")),
+                    // Kelp
+                    KelpItems.boots = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.FEET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_boots")),
+                    KelpItems.leggings = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.LEGS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_leggings")),
+                    KelpItems.chestplate = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.CHEST, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_chest")),
                     KelpItems.helmet = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_helmet")),
+
+                    // new ArmorItem(ArmoryArmorMaterial.TURTLE, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("obsidian_helmet")),
+
                     WoodenItem.helmet = new ArmorItem(ArmoryArmorMaterial.wood, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("wood_helmet")),
                     //PinkSapphireItems.helmet = new ArmorItem(ArmoryArmorMaterial.Sapphire, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("sapphire_helmet")),
                     //BlueGlassArmor.helmet = new ArmorItem(ArmoryArmorMaterial.blue_glass, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("blue_glass_helmet")),
                     ObsidianItems.helmet = new ArmorItem(ArmoryArmorMaterial.obsidian, EquipmentSlotType.HEAD, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("obsidian_helmet")),
                     // chest
-                    KelpItems.chestplate = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.CHEST, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_chest")),
+
                     WoodenItem.chestplate = new ArmorItem(ArmoryArmorMaterial.wood, EquipmentSlotType.CHEST, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("wood_chest")),
                     // SapphireArmor.chestplate = new ArmorItem(ArmoryArmorMaterial.Sapphire, EquipmentSlotType.CHEST, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("sapphire_chest")),
                     // BlueGlassArmor.chestplate = new ArmorItem(ArmoryArmorMaterial.blue_glass, EquipmentSlotType.CHEST, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("blue_glass_chest")),
                     ObsidianItems.chestplate = new ArmorItem(ArmoryArmorMaterial.obsidian, EquipmentSlotType.CHEST, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("obsidian_chest")),
                     // leggings
-                    KelpItems.leggings = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.LEGS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_leggings")),
+
                     WoodenItem.leggings = new ArmorItem(ArmoryArmorMaterial.wood, EquipmentSlotType.LEGS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("wood_leggings")),
                     // SapphireArmor.leggings = new ArmorItem(ArmoryArmorMaterial.Sapphire, EquipmentSlotType.LEGS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("sapphire_leggings")),
                     // BlueGlassArmor.leggings = new ArmorItem(ArmoryArmorMaterial.blue_glass, EquipmentSlotType.LEGS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("blue_glass_leggings")),
                     ObsidianItems.leggings = new ArmorItem(ArmoryArmorMaterial.obsidian, EquipmentSlotType.LEGS, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("obsidian_leggings")),
                     // boots
-                    KelpItems.boots = new ArmorItem(ArmoryArmorMaterial.kelp, EquipmentSlotType.FEET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("kelp_boots")),
+
                     WoodenItem.boots = new ArmorItem(ArmoryArmorMaterial.wood, EquipmentSlotType.FEET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("wood_boots")),
                     // SapphireArmor.boots = new ArmorItem(ArmoryArmorMaterial.Sapphire, EquipmentSlotType.FEET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("sapphire_boots")),
                     // BlueGlassArmor.boots = new ArmorItem(ArmoryArmorMaterial.blue_glass, EquipmentSlotType.FEET, new Item.Properties().group(ArmoryGroup.COMBAT)).setRegistryName(getLocation("blue_glass_boots")),
