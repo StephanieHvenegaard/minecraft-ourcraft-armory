@@ -8,6 +8,7 @@ Requires Core - 0.4.0
 - added stats for bone and bamboo sets.
 - updated core. 0.4.0
 - added click event for custom weapons.
+- fixed groups being mixed.
 
 ## Version 0.9.1 for minecraft 1.14.4
 Tested with forge : 28.1.106
